@@ -28,6 +28,10 @@ IMAP4       143         Internet Mail Access Protocol; ermöglicht das Lesen von
 SMTPs       587         Simple Mail Transfer Protocol Secure; Modernes, verschlüsseltes SMTP
 POP3s       995         Post office Protocol Secure; Verschlüsseltes SMTP
 
+# VoIP
+SIP         5060, 5061  Session Initiation Protocol; wird benötigt, um z.B. VoIP-Sessions zu initiieren, aufrecht zu erhalten, und zu schliessen.
+RTP         ephemeral   Real-Time Transport Protocol; Nötig für z.B. Audio- und Videostreams.
+
 # Web
 HTTP        80          Hypertext transfer protocol; Web
 HTTPS       443         HTTP Secure; HTTP mit SSL
