@@ -186,6 +186,67 @@ Das IP-Paket wird nun in ein neuen Ethernet-Frame verpackt:
 | fa16.3e02.83a1 | fa16.3e01.0c98 | 192.168.1.1   | 192.168.2.2   |
 ```
 
+Dieser Frame wird nun an R2 verschickt.
+
+---
+
+##### R2
+
+R2 wird nun wie R1 folgende Schritte durchführen:
+
+- Die FCS des Frames überprüfen
+- IP-Paket entkapseln, Frame verwerfen
+- Die Checksum des IP-Headers überprüfen
+- Die Ziel-IP überprüfen
+
+In der Routingtabelle finden wir folgende Einträge:
+
+```
+R2#show ip route
+Codes:  L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+        D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+        N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+        E1 - OSPF external type 1, E2 - OSPF external type 2
+        i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+        ia - IS-IS inter area, * - candidate default, U - per-user static route
+        o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+        a - application route
+        + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+S       192.168.1.0/24 [1/0] via 192.168.12.1
+        192.168.2.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.2.0/24 is directly connected, GigabitEthernet0/1
+L       192.168.2.254/32 is directly connected, GigabitEthernet0/1
+        192.168.12.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.12.0/24 is directly connected, GigabitEthernet0/2
+L       192.168.12.2/32 is directly connected, GigabitEthernet0/2
+```
+
+Das Netzwerk *192.168.2.0/24* ist direkt mit R2 über das GigabitEthernet0/1-Interface verbunden. R2 verringert nun die TTL des IP Paketes, errechnet erneut die IP-Header-Checksum, und überprüft die ARP-Tabelle. Nun wird wieder falls nötig ein ARP-Request versendet, oder das Paket wird direkt in einen neuen Frame verkapselt:
+
+```
+| Source:        | Destination:   | Source:       | Destination:  |
+| fa16.3e3c.7da4 | fa16.3e4a.f598 | 192.168.1.1   | 192.168.2.2   |
+```
+
+Der Frame wird nun an H2 verschickt.
+
+---
+
+##### H2
+
+H2 erhält nun den Frame und führt folgende Schritte aus:
+
+- FCS überprüfen
+- Überprüft, ob die Ziel-MAC mit der eigenen MAC übereinstimmt
+- Entkapselt das IP-Paket
+- Überprüft, ob die Ziel-IP mit der eigenen IP übereinstimmt
+
+Anschliessend schaut sich H2 das Protokoll-Feld an, um festzustellen, mit welchem *transport layer protocol* wir arbeiten. Basierend darauf wird das Paket weiter verarbeitet.
+
+---
 
 ## Hardware
 
