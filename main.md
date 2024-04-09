@@ -18,33 +18,31 @@ BITS        Physical layer          RS 232, CAT5, CAT6, DSL         Transmits ra
 
 ### Common ports
 
+```
 Protocol    Port    Role
 
-#### Email
-```
+# Email
 SMTP        25      Simple mail transfer protocol
 POP3        110
 IMAP4       143
 SMTPs       587     Simple Mail Transfer Protocol Secure; Modernes, verschlüsseltes SMTP
 POP3s       995
-```
-#### Web
-```
+
+# Web
 HTTP        80      Hypertext transfer protocol; Web
 HTTPS       443     HTTP Secure; HTTP mit SSL
-```
-#### Networking
-```
+
+# Networking
 DNS         53      Domain Name Service; löst Domain-Namen zu IP-Adressen auf
 SSH         22      Secure Shell; Verschlüsseltes Tunneling-Protokoll
 NTP         123     Network Time Protocol; Erlaubt Computern, ihre Uhr zu synchronisieren
 BGP         179     Border Gateway Protocol; Nötig, um effiziente Routen zwischen grossen Netzwerken (autonomen Systemen) zu erstellen
 ISAKMP      500     Internet Security Association and Key Management Protocol (nötig für IPSec)
 RDP         3389    Remote Desktop Protocol; Windows-Remotedesktop-Protokoll
-```
-#### Data transfer
-```
+
+# Data transfer
 FTP         20, 21  File Transfer Protocol; zum Transferieren von Daten zwischen Server und Client
+
 ```
 
 ---
