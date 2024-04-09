@@ -45,6 +45,7 @@ RPC         135         Remote Procedure Call; ermöglicht IPC
 # Data transfer/File-Sharing
 FTP         20, 21      File Transfer Protocol; zum Transferieren von Daten zwischen Server und Client
 SMB         445, 139    Server Message Blocks; Netzwerk-Filesharing-Protokoll, ermöglicht auch Drucker- und Device-Sharing.
+SCP         22          Secure Copy; File Transfer basierend auf SSH
 ```
 
 ---
