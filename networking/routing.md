@@ -38,7 +38,7 @@ Mit z.B. mehreren Netzwerkadaptern würde die Routingtabelle verschiedene Metrik
 
 ```
 Description	        Network Destination	    Netmask	            Gateway	            Interface	        Metric
-Default route       0.0.0.0	                0.0.0.0	            192.168.69.111	    192.168.69.111	    20
+Default route           0.0.0.0	                0.0.0.0	            192.168.69.111	    192.168.69.111	    20
 Default route	    0.0.0.0	                0.0.0.0	            192.168.70.100	    192.168.70.100  	30
 Loopback network	127.0.0.1	            255.0.0.0	        127.0.0.1	        127.0.0.1	        1
 Local network	    192.168.69.0	        255.255.255.0	    192.168.69.111	    192.168.69.111	    20
