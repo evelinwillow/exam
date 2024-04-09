@@ -61,7 +61,7 @@ Es gibt grob unterteilt zwei Arten von Routing: *static routing* und *dynamic ro
 Im folgenden Beispiel wird die folgende Netzwerktopologie benutzt:
 
 ```
-          192.168.12.1                                       192.168.12.2
+        192.168.12.1                                          192.168.12.2
 [R1] -- Gi0/2 ----------------------------------------------- Gi0/2 -- [R2]
   |                                                                     |
   Gi0/1                                                                 Gi0/1
