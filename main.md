@@ -54,9 +54,11 @@ Vorteile einer DMZ beinhalten:
 
 ---
 
-### *Routing*
+### Routing
 
-Es gibt grob unterteilt zwei Arten von Routing: *static routing* und *dynamic routing*.
+Es gibt grob unterteilt zwei Arten von Routing: *static routing* und *dynamic routing*. 
+Beim dynamischen Routing werden Routen, die dem Router bekannt werden, automatisch in die Tabelle eingetragen, und der Router sucht dynamisch die beste Route selber. 
+
 
 Im folgenden Beispiel wird die folgende Netzwerktopologie benutzt:
 
@@ -80,6 +82,29 @@ Im folgenden Beispiel wird die folgende Netzwerktopologie benutzt:
 Hier sind zwei Host-Computer (H1 und H2) dargestellt. H1 wird ein IP-Paket an H2 schicken, welches von R1 und R2 geroutet werden muss.
 
 #### IP Routing-Prozess
+
+##### Zusammenfassung
+
+Der Host, der ein Paket verschicken möchte, muss erst eine simple Frage beantworten:
+
+- Ist das Ziel im lokalen Subnet?
+    - Falls ja: Schau in der ARP-Tabelle nach, ob die Ziel-IP in der Tabelle enthalten ist, und nutze die entsprechende MAC-Adresse im Ziel-Feld des Ethernet-Frames.
+- Ist das Ziel in einem remoten Subnet?
+    - Falls ja: Schau in der ARP-Tabelle nach, ob die IP-Adresse des *default gateways* enthalten ist, und nutze die entsprechende MAC-Adresse im Ziel-Feld des Ethernet-Frames.
+
+Der Router führt folgende Schritte aus:
+
+- FCS (Frame Check Sequence) des Ethernet-Frames überprüfen und falls inkorrekt, Frame verwerfen
+- Überprüfen, ob die Zieladresse des Frames eine der folgenden ist:
+    - MAC-Adresse des Routers
+    - Broadcast-Adresse des Subnetzes, in dem das Interface ist
+    - Eine Multicast-Adresse, auf die wir hören
+- IP-Paket entkapseln und Frame verwerfen
+- In der Routingtabelle nach einer passenden Adresse schauen, und das das ausgehende Interface und optional den next hop ermitteln
+- TTL des IP-Headers verringern und Checksum neu berechnen
+- IP-Paket in einen neuen Frame kapseln
+- In der ARP-Tabelle nach der Ziel-Adresse oder dem next hop suchen
+- Den Frame verschicken
 
 ---
 
@@ -255,6 +280,7 @@ Anschliessend schaut sich H2 das Protokoll-Feld an, um festzustellen, mit welche
 ##### RAID 0 aka JBOD
 
 **Block-level striping without parity or mirroring**
+
 Bei RAID 0 (auch bekannt als *stripe set* oder *striped volume*) werden Daten *gleichmässig über mehrere Datenträger verteilt*, *ohne Parität*, Redundanz, oder Fehlertoleranz. 
 Falls ein Datenträger ausfällt, fällt das gesamte Array aus. 
 Es werden *mindestens 2 Platten benötigt*, und der *gesamte Speicherplatz* kann genutzt werden.
@@ -263,6 +289,7 @@ Lese- und Schreibgeschwindigkeit sind teilweise schneller als komplett ohne RAID
 ##### RAID 1
 
 **Mirroring without parity or striping**
+
 Als RAID 1 wird eine *exakte Kopie* (auch *mirror* genannt) auf *zwei oder mehr Festplatten* bezeichnet; eine klassische Konfiguration besteht aus 2 Festplatten. Sie bietet *keine Parität* und *kein Striping*.
 Ein RAID 1 Array ist immer nur *so gross wie der kleinste enthaltene Datenträger*.
 Lesegeschwindigkeit kann sehr schnell sein, allerdings ist die Schreibgeschwindigkeit normal.
@@ -270,6 +297,7 @@ Lesegeschwindigkeit kann sehr schnell sein, allerdings ist die Schreibgeschwindi
 ##### RAID 4
 
 **Block-level striping with dedicated parity**
+
 Bei RAID 4 wird auf *Block-level* gestriped, und es wird eine *dedizierte Paritätsplatte* eingesetzt. Dadurch ist die *Lesegeschwindigkeit relativ gut*, während die *Schreibgeschwindigkeit niedrig* ist, da die gesamten Paritätsdaten auf eine einzige Festplatte geschrieben werden. Ein Vorteil von RAID 4 ist die Möglichkeit, leicht im laufenden Betrieb den verfügbaren Speicherplatz erweitern zu können.
 Die Grösse eines RAID 4-Arrays ist die *Summe der Platten minus einer Platte* für Parität.
 
