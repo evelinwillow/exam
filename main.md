@@ -83,6 +83,8 @@ Hier sind zwei Host-Computer (H1 und H2) dargestellt. H1 wird ein IP-Paket an H2
 
 #### IP Routing-Prozess
 
+---
+
 ##### H1
 
 Als erstes erstellt H1 ein IP-Paket mit der eigenen IP-Adresse (*192.168.1.1*) als Quelle und H2 (*192.168.2.2*) als Ziel. Die erste Frage, die H1 beantwortet ist folgende:
@@ -114,6 +116,28 @@ Als erstes überprüft R1 die FCS (*Frame Check Sequence*) des Ethernet-Frames a
 ```
 | Preamble | SFD | Destination | Source | Type | IP Packet | FCS |
                                                          ^^^^^^^
+```
+
+Falls die FCS inkorrekt ist, wird der Frame direkt verworfen. Es gibt keine error correction für Ethernet; das ist etwas, worum sich ausschliesslich höhere Protokolle kümmern, wie z.B. *TCP* auf dem *transport layer*.
+Falls die FCS korrekt ist, wird der Frame verarbeitet, falls:
+
+- Die Ziel-MAC des Frames die *MAC des Interfaces des Routers* ist
+- Die Ziel-MAC des Frames die *Broadcast-Adresse des Subnets* ist, mit dem das Interface verbunden ist
+- Die Ziel-MAC des Frames eine *Multicast-Adresse* ist, auf die der Router hört.
+
+In diesem Fall entspricht die Ziel-MAC der MAC-Adresse des GigabitEthernet 0/1-Interfaces von R1; daher wird der Frame verarbeitet. Das IP-Paket wird entkapselt, und der Frame wird weggeworfen.
+
+```
+| Preamble | SFD | Destination | Source | Type | IP Packet | FCS |
+                                               ^^^^^^^^^^^^^
+```
+
+Nun schaut der Router sich die *header checksum* des IP-Paketes an.
+
+```
+...
+| Version | Header Length | Type of Service | Total Length | ID | IP Flags | Fragment Offset | TTL | Protocol | Header Checksum | Source | Destination | IP Option |
+                                                                                                              ^^^^^^^^^^^^^^^^^^^
 ```
 
 
