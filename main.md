@@ -81,8 +81,11 @@ Hier sind zwei Host-Computer (H1 und H2) dargestellt. H1 wird ein IP-Paket an H2
 ##### H1
 
 Als erstes erstellt H1 ein IP-Paket mit der eigenen IP-Adresse (*192.168.1.1*) als Quelle und H2 (*192.168.2.2*) als Ziel. Die erste Frage, die H1 beantwortet ist folgende:
+
 - Ist das Ziel lokal oder remote?
+
 H1 beantwortet diese Frage, indem die eigene IP-Adresse, Subnetzmaske, und die Ziel-IP betrachtet werden. H1 ist hier im Netzwerk *192.168.1.0/24*, also sind alle Adressen von *192.168.1.1 - 192.168.1.254* lokal. Da unser Ziel (*192.168.2.2*) ausserhalb des lokalen Subnetzes ist, müssen wir den *default gateway* benutzen. H1 wird nun das erstellte IP-Packet in ein Ethernet-Frame verpacken; dazu wird unter anderem die eigene Quell-MAC-Adresse benutzt. Anschliessend fragt H1 die zweite Frage:
+
 - Kenne ich die Ziel-MAC-Adresse des default gateway?
 
 
