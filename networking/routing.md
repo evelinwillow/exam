@@ -2,19 +2,12 @@
 
 ## Default Gateway
 
-Wenn ein Host ein Ziel erreichen will, was ausserhalb des lokalen Netzwerkes liegt, muss es einen *default gateway* benutzen. Als Gateway kann ein Router oder Multilayer-Switch benutzt werden.
+Als ein *Gateway* ist ein System definiert, welches Netzwerke unter Zuhilfename verschiedener Transportprotokolle so miteinander verbinden, dass Informationen zwischen den Netzwerken ausgetauscht werden können.
+Somit ist ein Gateway eine TCP/IP-Node mit Routingfunktion, und ein Gateway kann als eine Art Router betrachtet werden.
 
-```
-[H1| -------------- [S1] -------------- [H2]
-192.168.1.1                             192.168.1.2
-255.255.255.0                           255.255.255.0
-```
+Als *Router* definiert ist ein System, welches Pakete mithilfe von logischen Netzwerkadressen, meist IP-Adressen, zwischen zwei oder mehr Netzwerksegmenten versendet.
 
-Hier haben wir zwei Hosts mit einem Switch verbunden. Es gibt nur ein Netzwerk (*192.168.1.0*) mit der Subnetzmaske *255.255.255.0*.
-
-Wenn ein Host etwas an einen anderen Host versenden möchte, muss er erst überprüfen, ob das Ziel im selben Netzwerk ist. 
-Falls ja, wird das ARP-Protokoll benutzt, um die MAC-Adresse des Ziels zu ermitteln.
-Dies wird überprüft, indem die Subnetzmaske betrachtet wird.
+Dieser Gateway ist der Standardgateway für ein Ziel, das dem Absender nicht bekannt ist und damit der Punkt, an dem Pakete, die an Ziele ausserhalb des lokalen Netzwerkes adressiert sind, das Netzwerk verlassen.
 
 ## Routing-Tabelle
 
@@ -51,6 +44,14 @@ Multicast address   224.0.0.0               240.0.0.0           192.168.70.100  
 Limited broadcast   255.255.255.255         255.255.255.255     192.168.69.111      192.168.69.111      1
 Limited broadcast   255.255.255.255         255.255.255.255     192.168.70.100      192.168.70.100      1
 ```
+
+In diesem Beispiel ist die Metrik für die default Route des zweiten Netzwerkes höher. Daher wird der Netzwerkadapter des ersten Netzwerkes präferiert. 
+Der zweite Gateway wird nie benutzt werden und ist daher nicht nötig.
+
+Mit dem Kommado `route add -p <Ziel> <Netzmaske> <Gateway> <Interface> <Metrik>` kann eine neue Route hinzugefügt werden. 
+Der Switch `-p` sorgt hier dafür, dass die Route persistent ist. Das bedeutet, dass die Route bei einem Neustart gelöscht wird.
+
+
 
 ## IP Routing-Prozess
 
