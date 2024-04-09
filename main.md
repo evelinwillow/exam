@@ -4,6 +4,7 @@
 
 ### OSI Model
 
+```
 Data type   Layer                   Protocols
 
 DATA        Application layer       HTTP, FTP, DNS, Telnet
@@ -13,6 +14,7 @@ SEGMENTS    Transport layer         TCP, UDP
 PACKETS     Network layer           IP, ARP, IGMP, ICMP
 FRAMES      Data link layer         Ethernet, PPP, ATM
 BITS        Physical layer          RS 232, CAT5, CAT6, DSL
+```
 
 ### Common ports
 
