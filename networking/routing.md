@@ -49,7 +49,7 @@ In diesem Beispiel ist die Metrik für die default Route des zweiten Netzwerkes 
 Der zweite Gateway wird nie benutzt werden und ist daher nicht nötig.
 
 Mit dem Kommado `route add -p <Ziel> <Netzmaske> <Gateway> <Interface> <Metrik>` kann eine neue Route hinzugefügt werden. 
-Der Switch `-p` sorgt hier dafür, dass die Route persistent ist. Das bedeutet, dass die Route bei einem Neustart gelöscht wird.
+Der Switch `-p` sorgt hier dafür, dass die Route persistent ist. Das bedeutet, dass die Route bei einem Neustart nicht gelöscht wird.
 
 ## IP Routing-Prozess
 
