@@ -1,39 +1,51 @@
-# PRÜFUNGSTHEMEN AP2
+``# PRÜFUNGSTHEMEN AP2
 
 ## Networking
 
 ### OSI Model
 
 ```
-Data type   Layer                   Protocols
+Data type   Layer                   Protocols                       Role
 
-DATA        Application layer       HTTP, FTP, DNS, Telnet
-DATA        Presentation layer      SSL, TLS
-DATA        Session layer           NetBIOS, SMB, RPC, SCP, SIP
-SEGMENTS    Transport layer         TCP, UDP
-PACKETS     Network layer           IP, ARP, IGMP, ICMP
-FRAMES      Data link layer         Ethernet, PPP, ATM
-BITS        Physical layer          RS 232, CAT5, CAT6, DSL
+DATA        Application layer       HTTP, FTP, DNS, Telnet          Human/Computer interaction layer
+DATA        Presentation layer      SSL, TLS                        Ensures a usable data format; handles encryption
+DATA        Session layer           NetBIOS, SMB, RPC, SCP, SIP     Maintains connections and controls ports and sessions
+SEGMENTS    Transport layer         TCP, UDP                        Transmits data using protocols such as TCP and UDP
+PACKETS     Network layer           IP, ARP, IGMP, ICMP             Decides the physical path data will take
+FRAMES      Data link layer         Ethernet, PPP, ATM              Defines the format of the data on the network
+BITS        Physical layer          RS 232, CAT5, CAT6, DSL         Transmits raw bit stream over the physical medium 
 ```
 
 ### Common ports
 
+Protocol    Port    Role
+
 #### Email
-
-- SMTP      25
-- POP3      110
-- IMAP4     143
-- SMTPs     587
-- POP3s     995
-
+```
+SMTP        25      Simple mail transfer protocol
+POP3        110
+IMAP4       143
+SMTPs       587     Simple Mail Transfer Protocol Secure; Modernes, verschlüsseltes SMTP
+POP3s       995
+```
 #### Web
-
-- HTTP      80
-- HTTPS     443
-
+```
+HTTP        80      Hypertext transfer protocol; Web
+HTTPS       443     HTTP Secure; HTTP mit SSL
+```
 #### Networking
-
-- DNS       53
+```
+DNS         53      Domain Name Service; löst Domain-Namen zu IP-Adressen auf
+SSH         22      Secure Shell; Verschlüsseltes Tunneling-Protokoll
+NTP         123     Network Time Protocol; Erlaubt Computern, ihre Uhr zu synchronisieren
+BGP         179     Border Gateway Protocol; Nötig, um effiziente Routen zwischen grossen Netzwerken (autonomen Systemen) zu erstellen
+ISAKMP      500     Internet Security Association and Key Management Protocol (nötig für IPSec)
+RDP         3389    Remote Desktop Protocol; Windows-Remotedesktop-Protokoll
+```
+#### Data transfer
+```
+FTP         20, 21  File Transfer Protocol; zum Transferieren von Daten zwischen Server und Client
+```
 
 ---
 
