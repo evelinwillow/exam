@@ -115,7 +115,7 @@ Als erstes überprüft R1 die FCS (*Frame Check Sequence*) des Ethernet-Frames a
 
 ```
 | Preamble | SFD | Destination | Source | Type | IP Packet | FCS |
-                                                         ^^^^^^^
+                                                           ^^^^^^^
 ```
 
 Falls die FCS inkorrekt ist, wird der Frame direkt verworfen. Es gibt keine error correction für Ethernet; das ist etwas, worum sich ausschliesslich höhere Protokolle kümmern, wie z.B. *TCP* auf dem *transport layer*.
@@ -135,9 +135,55 @@ In diesem Fall entspricht die Ziel-MAC der MAC-Adresse des GigabitEthernet 0/1-I
 Nun schaut der Router sich die *header checksum* des IP-Paketes an.
 
 ```
-...
 | Version | Header Length | Type of Service | Total Length | ID | IP Flags | Fragment Offset | TTL | Protocol | Header Checksum | Source | Destination | IP Option |
                                                                                                               ^^^^^^^^^^^^^^^^^^^
+```
+
+Falls die Checksum nicht korrekt ist, wird das Paket direkt verworfen. Hier gibt es ebenfalls keine error correction; es wird sich auf die höheren Schichten verlassen. Falls die Checksum korrekt ist, schauen wir uns nun die Ziel-IP an:
+
+```
+| Version | Header Length | Type of Service | Total Length | ID | IP Flags | Fragment Offset | TTL | Protocol | Header Checksum | Source | Destination | IP Option |
+                                                                                                                                         ^^^^^^^^^^^^^^^
+```
+
+R1 schaut nun in seiner Routing-Tabelle nach, ob diese IP bekannst ist:
+
+```
+R1#show ip route
+Codes:  L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+        D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+        N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+        E1 - OSPF external type 1, E2 - OSPF external type 2
+        i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+        ia - IS-IS inter area, * - candidate default, U - per-user static route
+        o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+        a - application route
+        + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+        192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.1.0/24 is directly connected, GigabitEthernet0/1
+L       192.168.1.254/32 is directly connected, GigabitEthernet0/1
+S       192.168.2.0/24 [1/0] via 192.168.12.2
+        192.168.12.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.12.0/24 is directly connected, GigabitEthernet0/2
+L       192.168.12.1/32 is directly connected, GigabitEthernet0/2
+```
+
+R1 weiss also, dass es das *192.168.2.0/24*-Netzwerk erreichen kann, und das der *next hop* die IP-Adresse *192.168.12.2* ist. 
+R1 schaut nun erneut nach, ob die IP 192.168.12.2 kennt; dies wird als *rekursives Routing* bezeichnet. 
+Diese Adresse ist über das Netzwerk *192.168.12.0/24* und das Interface *GigabitEthernet0/2* erreichbar.
+
+Als letztes wird noch die TTL des IP-Paketes verringert. Dadurch muss auch eine neue Header-Checksum berechnet werden.
+
+Anschliessend überprüft R1 seine Arp-Tabelle, ob es einen Eintrag für *192.168.12.2* findet.
+Falls dieser Eintrag nicht gefunden wird, versendet R1 einen ARP-Request. 
+Das IP-Paket wird nun in ein neuen Ethernet-Frame verpackt:
+
+```
+| Source:        | Destination:   | Source:       | Destination:  |
+| fa16.3e02.83a1 | fa16.3e01.0c98 | 192.168.1.1   | 192.168.2.2   |
 ```
 
 
