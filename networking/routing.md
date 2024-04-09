@@ -78,8 +78,6 @@ Im folgenden Beispiel wird die folgende Netzwerktopologie benutzt:
 
 Hier sind zwei Host-Computer (H1 und H2) dargestellt. H1 wird ein IP-Paket an H2 schicken, welches von R1 und R2 geroutet werden muss.
 
----
-
 ### Zusammenfassung
 
 Der Host, der ein Paket verschicken möchte, muss erst eine simple Frage beantworten:
