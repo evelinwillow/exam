@@ -178,8 +178,10 @@ Zur Berechnung der Autonomiezeit sind folgende Werte wichtig:
 
 Die folgenden Formeln können zur Umwandlung von Schein- in Blindleistung und zurück benutzt werden:
 
+```
 Wirkleistung (in W) = Scheinleistung (in VA) * 0.65
 Scheinleistung (in VA) = Wirkleistung (in W) * 1.55
+```
 
 ##### Beispielrechnung
 
@@ -190,25 +192,33 @@ Folgende Verbraucher sollen an eine USV angeschlossen werden:
 - 1 Router mit 0.5 A und 230 V
 
 Berechnung der Wirkleistung:
+
 ```
 P(USV) = ( 2 * 300 W ) + ( 500 W ) + ( 0.5 A * 230 V * 0.65 )
 P(USV) = 1173.75 W
 ```
+
 Berechnung der Scheinleistung:
+
 ```
 S(USV) = 1175.75 W * 1.55
 S(USV) = 1724.38 VA
 ```
+
 Leistungsreserve von 20%:
+
 ```
 P(USV) = 1174.75 W * 1.2
 P(USV) = 1409.70 W
 ```
+
 oder
+
 ```
 S(USV) = 1724.38 VA * 1.2
 S(USV) = 2069.26 VA
 ```
+
 ## Software
 
 - *Backups*
