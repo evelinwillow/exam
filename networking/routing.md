@@ -1,5 +1,24 @@
 # Routing
 
+## Default Gateway
+
+Wenn ein Host ein Ziel erreichen will, was ausserhalb des lokalen Netzwerkes liegt, muss es einen *default gateway* benutzen. Als Gateway kann ein Router oder Multilayer-Switch benutzt werden.
+
+```
+[H1| -------------- [S1] -------------- [H2]
+192.168.1.1                             192.168.1.2
+255.255.255.0                           255.255.255.0
+```
+
+Hier haben wir zwei Hosts mit einem Switch verbunden. Es gibt nur ein Netzwerk (*192.168.1.0*) mit der Subnetzmaske *255.255.255.0*.
+
+Wenn ein Host etwas an einen anderen Host versenden möchte, muss er erst überprüfen, ob das Ziel im selben Netzwerk ist. 
+Falls ja, wird das ARP-Protokoll benutzt, um die MAC-Adresse des Ziels zu ermitteln.
+Dies wird überprüft, indem die Subnetzmaske betrachtet wird.
+
+
+## IP Routing-Prozess
+
 Es gibt grob unterteilt zwei Arten von Routing: *static routing* und *dynamic routing*. 
 Beim dynamischen Routing werden Routen, die dem Router bekannt werden, automatisch in die Tabelle eingetragen, und der Router sucht dynamisch die beste Route selber. 
 

@@ -138,3 +138,4 @@ Es kann der *Ausfall einer Festplatte* toleriert werden. In diesem Fall allerdin
 4cb) Dif/Inc/Full backup wiederherstellung
 5d) Inhalt Certificate
 
+
