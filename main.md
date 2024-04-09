@@ -54,6 +54,8 @@ Vorteile einer DMZ beinhalten:
 - Verhinderung von Network Reconnaissance
 - Blockierung von IP-Spoofing
 
+---
+
 ### *Routing*
 
 Es gibt grob unterteilt zwei Arten von Routing: *static routing* und *dynamic routing*.
@@ -102,6 +104,8 @@ H1 schaut in der ARP-Tabelle nach. Falls ein Eintrag gefunden wird, wird dieser 
 ```
 
 Dieser Frame wird jetzt zu R1 geschickt.
+
+---
 
 ##### R1
 
