@@ -16,6 +16,41 @@ Wenn ein Host etwas an einen anderen Host versenden möchte, muss er erst überp
 Falls ja, wird das ARP-Protokoll benutzt, um die MAC-Adresse des Ziels zu ermitteln.
 Dies wird überprüft, indem die Subnetzmaske betrachtet wird.
 
+## Routing-Tabelle
+
+Auf Windows kann über *route print* die Routingtabelle angezeigt werden. 
+
+```
+Description         Network Destination	    Netmask	            Gateway	            Interface	        Metric
+Default route	    0.0.0.0	                0.0.0.0	192.        168.69.111	        192.168.69.111	    20
+Loopback network	127.0.0.1	            255.0.0.0	        127.0.0.1	        127.0.0.1	        1
+Local network	    192.168.69.0	        255.255.255.0	    192.168.69.111	    192.168.69.111	    20
+Local IP address	192.168.69.111	        255.255.255.255	    127.0.0.1	        127.0.0.1	        20
+Subnet broadcast	192.168.69.255	        255.255.255.255	    192.168.69.111	    192.168.69.111	    20
+Multicast address	224.0.0.0	            240.0.0.0	        192.168.69.111	    192.168.69.111	    20
+Limited broadcast	255.255.255.255	        255.255.255.255	    192.168.69.111	    192.168.69.111	    1
+```
+
+Der Wert "Metric" für *loopback* und *limited broadcast* ist immer 1. 
+Alle anderen Adressen haben eine Metrik basierend auf den Kosten, die die Nutzung der Route mit sich bringt.
+
+Mit z.B. mehreren Netzwerkadaptern würde die Routingtabelle verschiedene Metriken für die verschiedenen Default-Routen anzeigen, aber nur eine würde genutzt werden:
+
+```
+Description	        Network Destination	    Netmask	            Gateway	            Interface	        Metric
+Default route	    0.0.0.0	                0.0.0.0	            192.168.69.111	    192.168.69.111	    20
+Default route	    0.0.0.0	                0.0.0.0	            192.168.70.100	    192.168.70.100  	30
+Loopback network	127.0.0.1	            255.0.0.0	        127.0.0.1	        127.0.0.1	        1
+Local network	    192.168.69.0	        255.255.255.0	    192.168.69.111	    192.168.69.111	    20
+Local IP address	192.168.69.111      	255.255.255.255	    127.0.0.1	        127.0.0.1	        20
+Local network	    192.168.70.0        	255.255.255.0	    192.168.70.100	    192.168.70.100	    30
+Local IP address	192.168.70.111      	255.255.255.255	    127.0.0.1	        127.0.0.1	        30
+Subnet broadcast	192.168.69.255      	255.255.255.255	    192.168.69.111	    192.168.69.111	    20
+Multicast address	224.0.0.0           	240.0.0.0	        192.168.69.111	    192.168.69.111	    20
+Multicast address	224.0.0.0           	240.0.0.0	        192.168.70.100	    192.168.70.100	    20
+Limited broadcast	255.255.255.255     	255.255.255.255	    192.168.69.111	    192.168.69.111	    1
+Limited broadcast	255.255.255.255     	255.255.255.255	    192.168.70.100	    192.168.70.100	    1
+```
 
 ## IP Routing-Prozess
 
