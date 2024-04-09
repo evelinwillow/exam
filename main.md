@@ -183,6 +183,9 @@ Wirkleistung (in W) = Scheinleistung (in VA) * 0.65
 Scheinleistung (in VA) = Wirkleistung (in W) * 1.55
 ```
 
+Zur Berechnung der Autonomiezeit kann die Formel `t = Q / I` benutzt werden. 
+t ist hier die Zeit in Stunden, Q die Kapazität in Ampere (A), und I die entnommene Leistung in Ampere.  
+
 ##### Beispielrechnung
 
 Folgende Verbraucher sollen an eine USV angeschlossen werden:
@@ -218,6 +221,8 @@ oder
 S(USV) = 1724.38 VA * 1.2
 S(USV) = 2069.26 VA
 ```
+
+Die USV sollte also mindestens eine Leistung von 1409.70 W oder 2069.26 VA haben.
 
 ## Software
 
