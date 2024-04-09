@@ -22,7 +22,7 @@ Auf Windows kann über *route print* die Routingtabelle angezeigt werden.
 
 ```
 Description         Network Destination	    Netmask	            Gateway	            Interface	        Metric
-Default route	    0.0.0.0	                0.0.0.0	192.        168.69.111	        192.168.69.111	    20
+Default route	    0.0.0.0                 0.0.0.0             192.168.69.111	        192.168.69.111	    20
 Loopback network    127.0.0.1	            255.0.0.0	        127.0.0.1	        127.0.0.1	        1
 Local network       192.168.69.0            255.255.255.0	    192.168.69.111	    192.168.69.111	    20
 Local IP address    192.168.69.111          255.255.255.255	    127.0.0.1	        127.0.0.1	        20
