@@ -26,14 +26,10 @@ BITS        Physical layer          RS 232, CAT5, CAT6, DSL
 - SMTPs     587
 - POP3s     995
 
----
-
 #### Web
 
 - HTTP      80
 - HTTPS     443
-
----
 
 #### Networking
 
