@@ -119,7 +119,28 @@ RAID 6 erweitert RAID 5 um eine *weitere Paritätsplatte*. Dadurch kann der Ausf
 Bei RAID 10 handelt es sich um eine mögliche Kombination der RAID-level. Dabei werden *gespiegelte Paare* an Festplatten *in einem RAID 0* zusammengefasst. Im Gegensatz zu RAID 5 muss hier allerdings *keine Parität* berechnet werden, wodurch *Schreibvorgänge schneller* sind. Der Nachteil eines RAID 10-Arrays ist allerdings, dass nur *50% des Gesamtspeichers* nutzbar sind.
 Es kann der *Ausfall einer Festplatte* toleriert werden. In diesem Fall allerdings ist die *Lesegeschwindigkeit nicht beeinträchtigt*, da die Daten nicht erst aus Parität berechnet werden müssen. RAID 10 benötigt *mindestens 4 Festplatten*.
 
-- USV
+### USV
+
+USV werden in 3 Arten unterteilt:
+
+- VFD (Voltage Frequency Dependent), auch bekannt als Offline-USV
+- VI (Voltage Independent), auch bekannt als Line Interactive-USV
+- VFI (Voltage and Frequency Independent), auch bekannt als Online-USV
+
+Basierend auf der Art kann eine USV gegen verschiedene Arten von Netzstörung schützen:
+
+```
+Störungstyp             Dauer               Definition
+
+Netzausfall             mehr als 10ms       Netzausfall wird als Nullspannungsbedingung definiert
+Spannungsschwankung     weniger als 16ms    Einbrüche, die kurz unter dem Normalwert liegen. Kann beim Einschalten grosser Anlagen auftreten.
+Spannungsspitzen        4ms bis 16ms        Oft durch statische Entladungen verursacht
+Spannungsstösse         weniger als 4ms     Plötzliche und kurzfristige Spitzen. Treten z.B. bei Blitzeinschlag auf.
+Unterspannungen         forlaufend          Spannung fällt unter zulässigen Grenzwert
+Überspannung            fortlaufend         Wenn z.B. grosse Anlagen aktiviert werden, kann der Normalbetrieb auf über 100% steigen.
+Frequenzschwankungen    sporadisch          Frequenz weicht von normalerweise konstanten Netzfrequenz ab
+Spannungsverzerrung     periodisch          Wird auch als Störspannung bezeichnet.
+```
 
 ## Software
 
