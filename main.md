@@ -23,10 +23,10 @@ Protocol    Port        Role
 
 # Email
 SMTP        25          Simple mail transfer protocol
-POP3        110
-IMAP4       143
+POP3        110         Post Office Protocol; erlaubt Zugriff auf die Inbox auf einem Email-Server
+IMAP4       143         Internet Mail Access Protocol; ermöglicht das Lesen von von Emails, ohne sie herunterladen oder zwischenspeichern zu müssen.
 SMTPs       587         Simple Mail Transfer Protocol Secure; Modernes, verschlüsseltes SMTP
-POP3s       995
+POP3s       995         Post office Protocol Secure; Verschlüsseltes SMTP
 
 # Web
 HTTP        80          Hypertext transfer protocol; Web
