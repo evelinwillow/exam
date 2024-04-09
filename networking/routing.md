@@ -37,7 +37,7 @@ Alle anderen Adressen haben eine Metrik basierend auf den Kosten, die die Nutzun
 Mit z.B. mehreren Netzwerkadaptern würde die Routingtabelle verschiedene Metriken für die verschiedenen Default-Routen anzeigen, aber nur eine würde genutzt werden:
 
 ```
-Description	        Network Destination	    Netmask	            Gateway	            Interface	        Metric
+Description         Network Destination	    Netmask	            Gateway	            Interface	        Metric
 Default route       0.0.0.0	                0.0.0.0	            192.168.69.111	    192.168.69.111	    20
 Default route	    0.0.0.0	                0.0.0.0	            192.168.70.100	    192.168.70.100  	30
 Loopback network	127.0.0.1	            255.0.0.0	        127.0.0.1	        127.0.0.1	        1
