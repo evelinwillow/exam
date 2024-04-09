@@ -119,6 +119,8 @@ RAID 6 erweitert RAID 5 um eine *weitere Paritätsplatte*. Dadurch kann der Ausf
 Bei RAID 10 handelt es sich um eine mögliche Kombination der RAID-level. Dabei werden *gespiegelte Paare* an Festplatten *in einem RAID 0* zusammengefasst. Im Gegensatz zu RAID 5 muss hier allerdings *keine Parität* berechnet werden, wodurch *Schreibvorgänge schneller* sind. Der Nachteil eines RAID 10-Arrays ist allerdings, dass nur *50% des Gesamtspeichers* nutzbar sind.
 Es kann der *Ausfall einer Festplatte* toleriert werden. In diesem Fall allerdings ist die *Lesegeschwindigkeit nicht beeinträchtigt*, da die Daten nicht erst aus Parität berechnet werden müssen. RAID 10 benötigt *mindestens 4 Festplatten*.
 
+---
+
 ### USV
 
 USV werden in 3 Arten unterteilt:
