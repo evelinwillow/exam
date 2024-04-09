@@ -62,14 +62,17 @@ Im folgenden Beispiel wird die folgende Netzwerktopologie benutzt:
 
 ```
         192.168.12.1                                          192.168.12.2
+        fa16.3e02.83a1                                        fa16.3e01.0c98
 [R1] -- Gi0/2 ----------------------------------------------- Gi0/2 -- [R2]
   |                                                                     |
   Gi0/1                                                                 Gi0/1
   192.168.1.254                                                         192.168.2.254
+  fa16.3e3f.fd3c                                                        fa16.3e3c.7da4
   |                                                                     |
   |                                                                     |
   |                                                                     |
   192.168.1.1                                                           192.168.2.2
+  fa16.3e87.9c2a                                                        fa16.3e4a.f598
   |                                                                     |
 [H1]                                                                   [H2]
 ```
@@ -94,8 +97,19 @@ H1 wird nun das erstellte IP-Packet in ein Ethernet-Frame verpacken; dazu wird u
 H1 schaut in der ARP-Tabelle nach. Falls ein Eintrag gefunden wird, wird dieser benutzt; falls nicht, wird eine ARP-Anfrage gestellt. Nun haben wir einen kompletten Ethernet-Frame, welcher ein IP-Paket mit den folgenden Adressen beinhaltet:
 
 ```
-Source:        | Destination:   | Source:     | Destination:
-fa16.3e87.9c2a | fa16.3e3f.fd3c | 192.168.1.1 | 192.168.2.2
+| Source:        | Destination:   | Source:       | Destination:   |
+| fa16.3e87.9c2a | fa16.3e3f.fd3c | 192.168.1.1   | 192.168.2.2    |
+```
+
+Dieser Frame wird jetzt zu R1 geschickt.
+
+##### R1
+
+Als erstes überprüft R1 die FCS (*Frame Check Sequence*) des Ethernet-Frames auf Korrektheit:
+
+```
+| Preamble | SFD | Destination | Source | Type | IP Packet | FCS |
+                                                         ^^^^^^^
 ```
 
 
