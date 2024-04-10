@@ -77,6 +77,45 @@ Verzweigung                 ---------------------
                             ---------------------
                             | Pfad 1  | Pfad 2  |   -> Es müssen nicht zwingend beide Pfade ausgefüllt sein! (z.B. Abbruchbedingung)
                             ---------------------
+
+Blockaufruf                 ---------------------
+                            | | Subroutine    | |
+                            ---------------------
+```
+
+## Programmablaufplan
+
+Ein Programmablaufplan ist ein Ablaufdiagramm für ein Computerprogramm, das auch als Flussdiagramm oder Programmstrukturplan bezeichnet wird. Es ist eine grafische Darstellung zur Umsetzung eines Algorithmus. Es beschreibt die Folge von Operationen zur Lösung einer Aufgabe.
+Er ist älter als das Struktogramm und wird nur noch sehr selten eingesetzt.
+
+```
+Baustein            Beschreibung                    PAP
+
+Terminator          Rechteck mit abgerundeten       /------------\
+                    Ecken / Oval                    | Start/Stop |
+                                                    \------------/
+
+Verbindung          Linie, Pfeil                    --------------
+                                                    ------------->
+
+Operation           Rechteck                        --------------
+                                                    | Operation  |
+                                                    --------------
+
+Subroutine          Rechteck mit doppelten          --------------
+                    vertikalen Linien               | | Subr.  | |
+                                                    --------------
+
+Verzweigung         Raute                             ----/\----
+                                                    / Verzweig.  \
+                                                    \            /
+                                                     ----\/----
+
+Ein-/Ausgabe        Parallelogram                     /----------/
+                                                     /   I/0    /
+                                                    /----------/
+
+
 ```
 
 ## Mathe
