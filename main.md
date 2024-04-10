@@ -168,7 +168,7 @@ Da hier stetig der Strom gewandelt wird, treten dadurch Verluste und Wärme auf.
 
 Der Wirkungsgrad liegt bei ca. 90%.
 
-#### Berechnung der Autonomiezeit
+#### Berechnung der Kapazität und Autonomiezeit
 
 Zur Berechnung der Autonomiezeit sind folgende Werte wichtig:
 
@@ -183,8 +183,7 @@ Wirkleistung (in W) = Scheinleistung (in VA) * 0.65
 Scheinleistung (in VA) = Wirkleistung (in W) * 1.55
 ```
 
-Zur Berechnung der Autonomiezeit kann die Formel `t = Q / I` benutzt werden. 
-t ist hier die Zeit in Stunden, Q die Kapazität in Ampere (A), und I die entnommene Leistung in Ampere.  
+Zur Berechnung der Autonomiezeit kann die Formel `Autonomiezeit = Kapazität / Leistung` benutzt werden. 
 
 ##### Beispielrechnung
 
