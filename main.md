@@ -39,8 +39,45 @@ Ein differenzielles Backup sichert alle Daten, die über ein *gesetztes Archivbi
 
 ---
 
-- Struktogramme
-    - Syntax
+### Struktogramme
+
+Struktogramme sind eine Möglichkeit, Algorithmen unabhängig von einer Programmiersprache aufzuschreiben. Sie sind Veranschaulichungen von Algorithmen mittels einfacher geometrischer Formen, deren Grundbaustein ein Rechteck darstellt. Jedes Rechteck ist mit einer elementaren Anweisung beschriftet oder es stellt eine Kontrollstruktur wie z.B. eine Schleife oder Verzweigung dar. Rechtecke können aufeinander gestapelt und ineinander geschachtelt werden. Diese Konstruktionsprinzipien findet man in vielen Programmiersprachen wieder, sodass die Notation eines Algorithmus als Struktogramm einen hilfreichen Zwischenschritt auf dem Weg vom Problem zum Programm darstellt. 
+
+```
+Baustein                    Struktogramm
+
+Anweisung                   ---------------------
+                            | Schritt 1         |
+                            ---------------------
+
+Sequenz                     ---------------------
+                            | Schritt 1         |
+                            ---------------------
+                            | Schritt 2         |
+                            ---------------------
+
+Schleife mit Bedingung      ---------------------
+                            |  wiederhole bis   |
+                            |  ------------------
+                            |  | Schritt 1      |
+                            ---------------------
+
+Schleife mit Zähler         ---------------------
+                            | wiederhole 10 mal |
+                            |  ------------------
+                            |  | Schritt 1      |
+                            |  ------------------
+                            |  | Schritt 2      |
+                            ---------------------
+
+Verzweigung                 ---------------------
+                            | ist x = y ?       |
+                            --------\   /--------
+                            | ja     \ /   nein |
+                            ---------------------
+                            | Pfad 1  | Pfad 2  |   -> Es müssen nicht zwingend beide Pfade ausgefüllt sein! (z.B. Abbruchbedingung)
+                            ---------------------
+```
 
 ## Mathe
 
