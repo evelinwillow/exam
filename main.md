@@ -227,6 +227,7 @@ Die USV sollte also mindestens eine Leistung von 1409.70 W oder 2069.26 VA haben
 
 ### Backups
 
+
 Es gibt drei Arten von Backups; *Vollbackup*, *inkrementelles Backup*, und *differenzielles Backup*. 
 Windows versieht Daten mit einem sogenannenten *Archivbit*, das wie eine Warnflagge funktioniert. Wird eine Datei mittels Backup gesichert, wird das Archivbit zurückgesetzt.
 Sobald eine Datei erstellt oder verändert wird, wird das Archivbit gesetzt. 
@@ -241,7 +242,6 @@ Ein Vollbackup sichert alle Daten *ohne Beachtung des Archivbits*. Das Archivbit
 #### Inkrementelle Backups
 
 Bei inkrementellen Backups werden nur die Daten gesichert, die sich *seit dem letzten Vollbackup* verändert haben. 
-Die neu erstellte Sicherung wird *immer auf dem letzten inkrementellen Backup aufgesetzt*.
 Dies hat den Nachteil, dass die Daten bei einer *Wiederherstellung aus mehreren Teilen* zusammengesetzt werden müssen. 
 Um zum Beispiel bei einem Totalverlust aller Daten eine vollständige Restauration durchzuführen, muss das *letzte Vollbackup gefolgt von allen inkrementellen Backups* in der Reihenfolge der Erstellung wiederhergestellt werden.
 
@@ -255,10 +255,10 @@ Jedoch spart man Speicherplatz und Zeit gegenüber einer vollständigen Datensic
 
 Ein differenzielles Backup sichert alle Daten, die über ein *gesetztes Archivbit* verfügen. Es bleibt allerdings *unberührt*.
 
+- TODO snapshots
+
 ---
 
-    - Arten
-    - Berechnung Grösse, Transfer
 - Struktogramme
     - Syntax
 
@@ -268,7 +268,18 @@ Ein differenzielles Backup sichert alle Daten, die über ein *gesetztes Archivbi
 
 ## WiSo
 
-- Versicherungsbeiträge
+### Versicherungsbeiträge
+
+```
+Versicherung                Beitragssatz    AG       AN
+
+Krankenversicherung         14.6%           7.3%    7.3%
+KV ermässigt                14%             7%      7%
+Rentenversicherung          18.6%           9.3%    9.3%
+Arbeitslosenversicherung    2.6%            1.3%    1.3%
+Pflegeversicherung          3.4%            1.7%    2.3%
+
+```
 
 ## Security
 
