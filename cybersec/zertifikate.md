@@ -61,6 +61,8 @@ Ablauf:
     - Client prüft vorheriges Zertifikat mit Intermediate 
     - Client prüft letztes Intermediate mit installiertem Root-Certificate
 
+## Ablauf eines HTTPS-Requests
+
 ```
 Client            Verbindungsaufbau (Client Hello)              Server
 | -----------------------------------------------------------------> |
@@ -85,7 +87,16 @@ Symmetrischen Sitzungsschlüssel erzeugen                             |
 | <----------------------------------------------------------------> |
 ```
 
-### Root-CAs
+- Der Verbindungsaufbau erfolgt über einen HTTPS-Request vom Client zum Server. Beim Client handelt es sich hier meistens um einen Webbrowser oder z.B. curl. Der Server ist demnach ein Webserver.
+- Der Client kontaktiert den Server über ein Protokoll mit Verschlüsselungsverfahren. 
+- Der Server nimmt die Verbindung an und schickt sein Zertifikat mit dem öffentlichen Schlüssel seines Schlüsselpaares zur Authentifizierung an den Client. 
+- Der Client überprüft das Server-Zertifikat und dessen Gültigkeit. 
+- Erkennt der Client das Zertifikat als ungültig, wird die Verbindung an dieser Stelle abgebrochen.
+- Erkennt der Client das Zertifikat als Gültig, erzeugt der Client den symmetrischen Sitzungsschlüssel.
+- Mit dem öffentlichen Schlüssel des Servers verschlüsselt der Client den Sitzungsschlüssel und schickt ihn an den Server, der ihn mit seinem privaten Schlüssel entschlüsseln kann.
+- Anschliessend bestätigt der Server den Sitzungsschlüssel. Danach kann eine verschlüsselte Verbindung aufgebaut werden.
+
+## Root-CAs
 
 Root-CAs sind Certificate Authorities, denen der User bedingungslos vertraut. Dazu gehört z.B. GeoTrust oder der Staat der Niederlande. 
 Von Ihnen erstellte Zertifikate sind entweder im Betriebssystem oder in der Applikation verankert. Sollte eines dieser Zertifikate nicht mehr aktuell sein, besteht die Gefahr, dass neuere Zertifikate nicht anerkannt werden oder sogar noch CAs vertraut werden, die bereits unsicher sind. 
