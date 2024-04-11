@@ -62,17 +62,17 @@ Ablauf:
     - Client prüft letztes Intermediate mit installiertem Root-Certificate
 
 ```
-Client                    Verbindungsaufbau                     Server
+Client            Verbindungsaufbau (Client Hello)              Server
 | -----------------------------------------------------------------> |
 |                                                                    |
-|                      Server-Authentifizierung                      |
+|              Server-Authentifizierung (Server Hello)               |
 | <----------------------------------------------------------------- |
 |                                                                    |
 Zertifikat prüfen                                                    |
 Symmetrischen Sitzungsschlüssel erzeugen                             |
 |                                                                    |
-|         Mit öffentlichem Schlüssel des Servers verschlüsselten     |
-|      Sitzungsschlüssel an den Server senden (Client Key Exchange)  |
+|       Mit öffentlichem Schlüssel des Servers verschlüsselten       |
+|   Sitzungsschlüssel an den Server senden (Client Key Exchange)     |
 | -----------------------------------------------------------------> |
 |                                                                    |
 |                                Verschlüsselten Sitzungsschlüssel mit
