@@ -37,7 +37,6 @@ Aussteller und Inhaber werden jeweils durch eine Reihe von Attributen characteri
 ## Prüfungsprozess
 
 ```
-
 ---------------------
 | ROOT CERTIFICATE  |
 | Digital Signature |
@@ -54,5 +53,43 @@ Aussteller und Inhaber werden jeweils durch eine Reihe von Attributen characteri
                                                        | Public Key           |
                                                        ------------------------
 ```
+
+Ablauf:
+- Client erhält Zertifikat vom Server
+- Solange weitere Intermediate-Zertifikate benötigt werden: 
+    - Intermediate vom Server nutzen oder ggf. herunterladen
+    - Client prüft vorheriges Zertifikat mit Intermediate 
+    - Client prüft letztes Intermediate mit installiertem Root-Certificate
+
+```
+Client                    Verbindungsaufbau                     Server
+| -----------------------------------------------------------------> |
+|                                                                    |
+|                      Server-Authentifizierung                      |
+| <----------------------------------------------------------------- |
+|                                                                    |
+Zertifikat prüfen                                                    |
+Symmetrischen Sitzungsschlüssel erzeugen                             |
+|                                                                    |
+|         Mit öffentlichem Schlüssel des Servers verschlüsselten     |
+|      Sitzungsschlüssel an den Server senden (Client Key Exchange)  |
+| -----------------------------------------------------------------> |
+|                                                                    |
+|                                Verschlüsselten Sitzungsschlüssel mit
+|                                     privatem Schlüssel entschlüsseln
+|                                                                    |
+|           Server bestätigt den geheimen Sitzungsschlüssel          |
+| <----------------------------------------------------------------- |
+|                                                                    |
+|              Verschlüsselte HTTP-Response und -Request             |
+| <----------------------------------------------------------------> |
+```
+
+### Root-CAs
+
+Root-CAs sind Certificate Authorities, denen der User bedingungslos vertraut. Dazu gehört z.B. GeoTrust oder der Staat der Niederlande. 
+Von Ihnen erstellte Zertifikate sind entweder im Betriebssystem oder in der Applikation verankert. Sollte eines dieser Zertifikate nicht mehr aktuell sein, besteht die Gefahr, dass neuere Zertifikate nicht anerkannt werden oder sogar noch CAs vertraut werden, die bereits unsicher sind. 
+Somit ist es nicht mehr möglich, eine sichere Verbindung herzustellen.
+
 
 
