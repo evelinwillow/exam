@@ -85,12 +85,77 @@ Im Bereich des Datenschutzes spricht man hier von *technischen und organisatoris
 - Getrennte Nutzerkonten
 - Getrennte verarbeitende Systeme
 
+## Integrität
+
+Der Begriff *Integrität* bedeutet in der IT unter anderem die korrekte Funktionsweise von Systemen oder die Unversehrtheit von Daten. In Bezug auf Daten bedeutet er weiterhin, dass die Daten vollständig sind. Damit ist nicht nur deren Inhalt gemeint, sondern auch die Metadaten.
+Für Unternehmen ist es unerlässlich, dass die Datenverarbeitung zuverlässig funktioniert, da dies für den laufenden Geschäftsbetrieb unverzichtbar ist. Das Schutzziel der Integrität sollte daher eine hohe Priorität haben.
+
+Die Integrität ist nicht nur im Sinne der DSGVO wichtig; so ist sie z.B. auch bei der Aufklärung von IT-Sicherheitsvorfällen durch IT-Forensiker wichtig. Hier sind häufig besonders nicht auf den ersten Blick als wichtig erkennbare Daten (bzw. nicht sensible Daten) wie Log-Dateien und Protokolldaten relevant. Angreifer könnten durch Manipulation dieser Daten so Sicherheitsvorfälle bewusst verschleiern. Weiterhin könnten diese Daten die interne Struktur eines Informationsverbundes verraten.
+
+### Vorgaben der DSGVO
+
+Die DSGVO listet Integrität als einen der Grundsätze für die Verarbeitung von personenbezogenen:
+
+> "Personenbezogene Daten müssen:
+in einer Weise verarbeitet werden, die eine angemessene Sicherheit der personenbezogenen Daten gewährleistet, einschliesslich Schutz vor unbefugter oder unrechtmässiger Verarbeitung und vor unbeabsichtigtem Verlust, unbeabsichtigter Zerstörung oder unbeabsichtigter Schädigung durch geeignete technische und organisatorische Massnahmen ("Integrität und Vertraulichkeit")"
+
+Hier wird darauf eingegangen, dass Veränderungen sowie Entfernung von Daten durch Unbefugte zu verhindern ist - allerdings bezieht sich das Entfernen hier in diesem Kontext eher auf das Schutzziel der Vertraulichkeit. 
+Bei der Integrität der Daten geht es primär darum, Veränderungen, sollten diese denn auftreten, erkennbar zu machen. Dies dient dazu, dass sie korrigiert werden können. 
+Dadurch schliesst die Integrität auch an den Grundsatz der Richtigkeit an.
+
+Verantwortliche müssen unter Berücksichtigung einer Reihe von Umständen technische und organisatorische Massnahmen treffen, um die Integrität und Belastbarkeit von Systemen und Diensten zu garantieren, die personenbezogene Daten verarbeiten.
+
+Das Standard-Datenschutzmodell ordnet der Integrität weiterhin einige weitere Anforderungen aus der DSGVO zu:
+- Behebung und Abmilderung von Datenschutzverletzungen
+- Angemessense Überwachung der Verarbeitung
+- Fehler- und Diskriminierungsfreiheit beim Profiling
+
+### Bedrohungen für die Integrität 
+
+Neben der bereits genannten Manipulation durch dritte oder auch Schadprogramme gibt es weitere, nicht böswillige Faktoren wie Fehlverhalten von Personen oder Fehlfunktionen von Software oder Übermittlungsfehler:
+
+- **Alte Datenträger**: Wenn Medien längere Zeiten nicht gewartet oder gepflegt werden, können Daten auf dem Medium beschädigt werden oder verloren gehen. Mit fortgeschrittenem Alter steigt auch die Wahrscheinlichkeit, dass Datenträger kaputt gehen oder Daten korruptiert werden. 
+- **Übertragungsfehler**: Falls es bei der Datenübertragung zu Verbindungsabbrüchen kommt und die Verbindung dann wieder hergestellt wird, kann nicht garantiert werden, dass Daten nicht unvollständig oder fehlerhaft übertragen wurden. Besonders bei grösseren Datenmengen ist dies nicht unwahrscheinlich.
+- **Fehlerhafte Eingaben**: Beispielsweise kann ein fehlerbehaftetes Script Daten überschreiben, falsch umwandeln, oder inkorreket schreiben. 
+
+### Mögliche resultierende Schäden
+
+Aus der Verletzung der Unversehrtheit resultieren Probleme, die in manchen Fällen ebenfalls zu immensen Schäden führen können:
+
+- **Informationen können nicht mehr gelesen werden**: Ein einzelnes inkorrektes Bit in z.B. kryptographischen Schlüsseln kann dazu führen, dass diese nicht mehr gelesen werden können oder verschlüsselte Daten nicht mehr entschlüsselt werden. Weiterhin kann das Schutzziel der Authentizität eventuell nicht mehr überprüft werden. Im schlimmsten Fall sind die darin enthaltenen Informationen damit verloren.
+- **Inkorrekt archivierte Daten**: Viele Unternehmen archivieren grosse Mengen an Daten. Treten dabei Fehler auf und bleiben diese über im schlimmsten Fall mehrere Jahre unbemerkt, kann der Schaden immens sein. Diese Daten sind z.B. nicht mehr vor Gericht verwendbar, da ihre Integrität nicht mehr gewährleistet ist.
+- **Manipulation**: Angaben in z.B. Emails könnten manipuliert sein. Dadurch kann bespielsweise bezweckt werden, dass Überweisungen in falscher Höhe oder an den falschen Empfänger geschickt werden.
+
+### Schutzmassnahmen
+
+Häufig lässt sich der Schutz der Integrität von Daten mit wenig Aufwand realisieren. Hier spricht man von Umsetzungen, die das System zusätzlich härten, um die Angriffsfläche zu minimieren.
+
+- Einschränkung von Änderungs- und Schreibrechten auf bestimmten Daten, um versehentliche oder böswillige Änderungen zu verhindern. 
+- Digitale Signaturen, Siegel und Prüfsummen sollten eingesetzt werden, um zu überprüfen, ob Daten manipuliert wurden.
+- Authentifizierung und Indentifizierung von Personen, die auf bestimmte Daten zugreifen wollen
+- Systeme immer auf aktuellstem Stand halten, um korrekte Datenübertragung zu gewährleisten
+
+#### Verwandtheit mit dem Schutzziel Vertraulichkeit
+
+Die Vertraulichkeit ist eng verwandt mit der Integrität. Viele Vorkehrungen zum Schutz des einen gewährleisten auch den Schutz des anderen Zieles:
+
+- Erforderlichkeitsprinzip im Rollen- und Berechtigungskonzept 
+- ordnungsgemässe Authentifizierungsverfahren (z.B. 2FA)
+- Kontrollierte Nutzung von Kommunikationskanälen
+- Einschränkung von Zugriff und Zutritt
+
+
+
+
+
+
+
+
+
 ## Erweiterte Schutzziele
 
 - **Authentizität**: Es muss sichergestellt werden, dass die Nachricht wirklich vom angegebenen Absender kommt.
-
 - **Nichtabstreitbarkeit**: Eine Kommunikation kann verbindlich einem Absender zugeordnet werden.
-
 - **Verlässlichkeit**: Ein System übt seine Funktionsweise konsistent aus.
 
 Diese erweiterten Schutzziele spielen nur in bestimmtem Kontext eine wichtige Rolle, wie z.B. Authentizität beim B3S-Standard für Krankenhäuser.
