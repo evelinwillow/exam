@@ -118,15 +118,13 @@ Ein-/Ausgabe        Parallelogram                     /----------/
 
 ```
 
-## Mathe
-
-- Unit conversion (MiB zu MB, Mbit/s...)
-
 ## Security
 
 # EHEMALIGE PRÜFUNGEN
 
 ## 2023 Sommer FISI
+
+GA 1
 
 - Note: 67/100 1. Durchlauf
                 
@@ -137,3 +135,12 @@ Ein-/Ausgabe        Parallelogram                     /----------/
 4a) Unit conversion...
 4cb) Dif/Inc/Full backup wiederherstellung
 5d) Inhalt Certificate
+
+GA 2 
+
+1a) Lasten/Pflichtenheft
+1da) Zinsrechnung 
+2b) Application-Virtualisierung
+SQL 
+DSGVO 
+
