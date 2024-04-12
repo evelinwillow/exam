@@ -46,9 +46,44 @@ Typische Gefahren, welche allerdings auch teilweise in anderen Kategorien auftau
 - **Infiltration von IT-Systemen zur Erlangung oder Vernichtung von Informationen**: Administrator A bekommt in einer Email einen Hinweis auf eine neue Software. Zum Testen installiert er sich die Software, welche sich als Ransomware herausstellt und sich in der Folge über weitere Systeme, auf die der Administrator durch erhöhte Rechte zugreifen kann, ausbreitet.
 - **Abhörung analoger oder digitaler Kommunikation**: Unternehmen A versendet Mails ohne Verschlüsselung. Dadurch können Angreifer Mails im Netzwerkverkehr direkt mitlesen.
 
+### Schutzmassnahmen 
 
+Um Folgen vorzubeugen, sollten Schutzmassnahmen nicht erst implementiert werden, wenn es schon zu spät ist. Dazu sollten für jeden Informationstyp nach der Klassifizierung in Bezug auf die Vertraulichkeit mögliche Risiken und Folgen unter Beachtung der jeweiligen Eintrittswahrscheinlichkeit erfasst werden.
 
+Im Bereich des Datenschutzes spricht man hier von *technischen und organisatorischen Massnahmen*, die klassisch in *Zutritts-*, *Zugangs-*, *Zugriffs-* und *Trennungskontrolle* unterschieden werden.
 
+#### Zutrittskontrolle
+
+- Eingezäuntes Grundstück 
+- Alarmanlagen
+- Schliessanlagen
+- Videoüberwachung 
+- Besucherregelungen
+
+#### Zugangskontrolle
+
+- Passwordkomplexität 
+- Biometrie
+- Datenträgerverschlüsselung
+- Firewall
+- Bildschirmsperre
+
+#### Zugriffskontrolle
+
+- Abschliessbare Schränke 
+- Berechtigungskonzept
+- Zugriffsprotokollierung 
+- Datenträgerentsorgung
+- Sperrung von Anschlüssen 
+- Prüfung von Email-Anhängen
+
+#### Trennungskontrolle
+
+- Mandatentrennung
+- Datenspeichertrennung
+- Zweckbindung
+- Getrennte Nutzerkonten
+- Getrennte verarbeitende Systeme
 
 ## Erweiterte Schutzziele
 
