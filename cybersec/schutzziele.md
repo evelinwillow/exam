@@ -144,13 +144,41 @@ Die Vertraulichkeit ist eng verwandt mit der Integrität. Viele Vorkehrungen zum
 - Kontrollierte Nutzung von Kommunikationskanälen
 - Einschränkung von Zugriff und Zutritt
 
+## Verfügbarkeit 
 
+Das Schutzziel Verfügbarkeit steht für die Garantie, dass Dienstleistungen, Funktionen eines Systems, Anwendungen, Netzwerke oder Informationen von den Anwendern stehts wie vorgesehen genutzt werden können.
+Zwischen Anbietern von IT-Systemen oder -Dienstleistungen und deren Kunden kann eine solche Garantie in Service Level Agreements (SLA) vertraglich festgehalten werden. Diese schreiben dann vor, dass z.B. pro Jahr ein Server nur 8 Stunden ausfallen darf. Werden SLAs vom Anbieter verletzt, muss der Anbieter i.d.R. vorher definierte Strafen zahlen oder den vertraglich festgehaltenen Verlust wiedergutmachen.
 
+Geplante Ausfallzeiten, wie z.B. zum Einspielen von notwendigen Patches oder Wartungsarbeiten werden ebenso berücksichtigt. Das bedeutet, dass nur die nicht geplante Ausfallzeit relevant ist. Diese müssen jedoch in der Regel vorher abgestimmt werden.
 
+### Berechnung von Verfügbarkeit
 
+Oft wird Verfügbarkeit in Prozent angegeben. Sie wird berechnet, indem der Zeitraum, in dem das System oder die Ressource zur Verfügung steht, durch den Gesamtzeitraum eines Jahres geteilt wird. Anschliessend wird mit 100 multipliziert. 
+Heutzutage gilt 99% Verfügbarkeit bei qualitativ hochwertigen Geräten als Minimalanforderung.
 
+Das BSI hat das sogenannte 9er-System zur Klassifizierung von Verfügbarkeit definiert. Diese sind in 5 Klassen aufgeteilt, wobei bei Klasse 0 keine "zugesicherte Verfügbarkeit" besteht, und Klasse 5 eine absolute Ausfalltoleranz verspricht. Die Verfügbarkeitsklassen unterscheiden sich in den berechnenten Verfügbarkeiten um je eine Nachkommastelle. Während Klasse 1 bereits 99.0% als Maximum angibt, garantiert Klasse 2 bereits 99.9% und somit nur rund 9 Stunden Ausfallzeit im Jahr.
 
+Weiterhin gibt es die Klassifizierung der Harvard Research Group, welches Verfügbarkeit in 6 Klassen oder AEC (Availability Environment Classification) einteilt. Es kommt weitestgehend ohne Berechnungen aus.
 
+### Hochverfügbarkeit
+
+Besonders im Cloud-Umfeld redet man gerne von Hochverfügbarkeit. Kein Anbieter kommt darum herum, High Availability als grossen Vorteil der Cloud zu nennen. Die Definition ist aber eher schwammig und weicht von Quelle zu Quelle ab. In einigen Fällen wird von Hochverfügbarkeit gesprochen, wenn zusätzlich zur garantierten Verfügbarkeit des Systems auch noch eine "Notlösung" für den Fall existiert, dass der garantierten Verfügbarkeit doch ein Fehler unterläuft. In einer Cloud-Umgebung kann dies z.B. durch ein sogenanntes Failover-Cluster erreicht werden. 
+
+Andere Definitionen beziehen sich explizit auf Zahlen und bezeichnen Verfügbarkeiten ab 99.99% als Hochverfügbarkeit. 
+
+### Vorgaben der DSGVO
+
+Die DSGVO fordert für das Schutzziel der Verfügbarkeit von personenbezogenen Daten als technisch und organisatiorische Massnahme ausdrücklich 
+
+> "die Fähigkeit, die Vertraulichkeit, Integrität, Verfügbarkeit und Belastbarkeit der Systeme und Dienste im Zusammenhang mit der Verarbeitung auf Dauer sicherzustellen."
+
+#### Unterscheidung des Verfügbarkeitszieles der DSGVO von der IT-Security
+
+Das Gewährleistungsziel der Verfügbarkeit seitens DSGVO bezieht sich zwar ebenso auf Systeme und Dienste, allerdings stehen nicht das Unternehmen und dessen Assets, sondern der Mensch im Vordergrund. Es geht nicht darum, eine Website möglichst lange online zu halten, um z.B. Umsatzeinbrüche zu verhindern, sondern um die Garantie, dass personenbezogene Daten wie erwartet und vereinbart verarbeitet werden und er auf die Verarbeitung mit seinen Rechten einwirken kann. Daher kann im direkten Kontrast zur IT-Security eine Nichtverfügbarkeit durchaus im Sinne des Datenschutzes sein, z.B. wenn der Betroffene sein Recht auf Löschung ausübt oder der erforderliche Zweck für die Datenverarbeitung ausfällt.
+
+#### Vorgaben zur Wiederherstellung der Verfügbarkeit
+
+TODO fertig schreiben Q_Q
 
 ## Erweiterte Schutzziele
 
