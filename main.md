@@ -144,3 +144,16 @@ GA 2
 SQL 
 DSGVO 
 
+WiSo
+
+3) Arbeitszeit 
+7) Betriebsrat Mitbestimmungsrecht 
+10) Sozialpartner
+12) Beitragsrechnung
+17) Rechtsformen
+18) Unternehmensverbindungen
+19) Gleichgewichtspreis (Angebotsüberhang, Konsumentenrente
+25) Prokura 
+
+
+

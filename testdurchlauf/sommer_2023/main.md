@@ -608,3 +608,257 @@ Zutrittseinschränkung (z.B. Kameraüberwachung, physisch abgeschottete Speicher
 **14/25 PUNKTE**
 
 **GESAMTPUNKTE: 64 oder 51**
+
+# WiSo
+
+## Aufgabe 1 
+
+tertiärer Sektor 
+
+Erwerbsgesellschaft
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 2 
+
+### a) 
+
+8 
+
+### b) 
+
+9 
+
+### c) 
+
+2 
+
+### d) 
+
+1 
+
+### e)
+
+7 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 3 
+
+1 -> 4 
+
+**0/3.3 PUNKTE**
+
+## Aufgabe 4 
+
+3
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 5 
+
+5 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 6 
+
+3 
+5 
+8 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 7 
+
+1 
+2 -> 3
+
+**0/3.3 PUNKTE**
+
+## Aufgabe 8 
+
+1 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 9 
+
+2 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 10 
+
+5 -> 4
+
+**0/3.3 PUNKTE**
+
+## Aufgabe 11 
+
+5 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 12 
+
+262.8 -> 275.40
+
+**0/3.3 PUNKTE**
+
+## Aufgabe 13
+
+1 
+3 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 14 
+
+1
+
+**3.3/3.3 PUNKTE**
+## Aufgabe 15 
+
+5 ??? 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 16 
+
+4 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 17 
+
+3 -> 2
+5 -> 3 
+
+**0/3.3 PUNKTE**
+
+## Aufgabe 18 
+
+### a) 
+
+3 -> 1 
+
+### b) 
+
+4 
+
+### c) 
+
+3 
+
+### d) 
+
+1 -> 3
+
+### e) 
+
+2 
+
+**0/3.3 PUNKTE**
+
+## Aufgabe 19 
+
+### a) 
+
+1225 
+
+### b)
+
+10 -> 20
+
+### c)
+
+20 ? -> 10 
+
+**0/3.3 PUNKTE**
+
+## Aufgabe 20 
+
+1: 8% -> bestes Quartal 
+2: 7% 
+3: 5% 
+4: 6% 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 21 
+
+1 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 22 
+
+3 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 23 
+
+2 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 24 
+
+3 
+4 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 25 
+
+1 
+
+**0/3.3 PUNKTE**
+
+## Aufgabe 26 
+
+2 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 27 
+
+2 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 28 
+
+2 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 29 
+
+### a) 
+
+1 
+
+### b) 
+
+3 
+
+### c) 
+
+4 
+
+### d) 
+
+2 
+
+**3.3/3.3 PUNKTE**
+
+## Aufgabe 30 
+
+5 
+
+**3.3/3.3 PUNKTE**
+
+**GESAMTPUNKTE: 69/100**
