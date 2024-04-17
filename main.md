@@ -156,4 +156,13 @@ WiSo
 25) Prokura 
 
 
+## 2023 Winter FISI 
+
+3) Was darf ein Arbeitgeber anfordern
+5) Handelsregister
+6) Sicherheitsbeauftragte
+18) Mutterschutz
+20) Wirtschaftlichkeit
+26) Tarifverhandlung Ablauf
+27) Kündigungsfrist 
 

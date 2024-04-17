@@ -472,13 +472,13 @@ Brutto_Gesamt = 2,992.88 Euro
 
 2 -> 3 
 
-**/3.3 PUNKTE**
+**0/3.3 PUNKTE**
 
 ## Aufgabe 6 
 
 1 -> 2
 
-**/3.3 PUNKTE**
+**0/3.3 PUNKTE**
 
 ## Aufgabe 7 
 
@@ -546,9 +546,11 @@ Wahlberechtigt:
 
 **3.3/3.3 PUNKTE**
 
-15) 
+## Aufgabe 15 
 
 3 
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 16
 
@@ -556,101 +558,105 @@ Wahlberechtigt:
 1 - 0.0025 
 3140 - 7.85
 
+**3.3/3.3 PUNKTE**
+
 ## Aufgabe 17 
 
 4
 
-**/3.3 PUNKTE**
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 18 
 
-12
+12 -> 8
 
-**/3.3 PUNKTE**
+**0/3.3 PUNKTE**
 
 ## Aufgabe 19 
 
 2
 
-**/3.3 PUNKTE**
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 20 
 
 1: 60.000 Gewinn -> dieser
 2: 20.000 Gewinn 
-3: 24.000 Gewinn 
+3: 24.000 Gewinn -> ??? dieser korrekt why?
 4: 24.000 Gewinn 
 
-**/3.3 PUNKTE**
+**0/3.3 PUNKTE**
 
 ## Aufgabe 21 
 
 3
 
-**/3.3 PUNKTE**
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 22 
 
 5 
 
-**/3.3 PUNKTE**
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 23 
 
 1
 
-**/3.3 PUNKTE**
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 24 
 
 2 
 5 
 
+**3.3/3.3 PUNKTE**
+
 ## Aufgabe 25 
 
 4
 
-**/3.3 PUNKTE**
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 26 
 
-c 
-e 
-f 
-b 
-d 
-a 
-g 
+c 3 -> 6 
+e 5 -> 4
+f 6 -> 1
+b 2 -> 5
+d 4 -> 2
+a 1 -> 3
+g 7
 
 
-**/3.3 PUNKTE**
+**0/3.3 PUNKTE**
 
 ## Aufgabe 27 
 
-31.5 oder 30.5 
+31.5 oder 30.5 -> 15.6
 
-**/3.3 PUNKTE**
+**0/3.3 PUNKTE**
 
 ## Aufgabe 28 
 
-b 
-a 
-d 
-c
+b 2
+a 1
+d 4 
+c 3
 
-**/3.3 PUNKTE**
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 29 
 
 1 
 6
 
-**/3.3 PUNKTE**
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 30 
 
 5
 
-**/3.3 PUNKTE**
+**3.3/3.3 PUNKTE**
 
-**GESAMTPUNKTE:**
+**GESAMTPUNKTE: 77.55**
