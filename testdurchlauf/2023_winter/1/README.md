@@ -418,121 +418,238 @@ Symmetrische Schlüssel sind anfällig dafür, abgefangen zu werden, da sie unve
 
 ## Aufgabe 1 
 
-**/3.3 PUNKTE**
+b 
+a 
+c 
+d 
+e 
+f 
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 2 
 
-**/3.3 PUNKTE**
+1 
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 3 
 
-**/3.3 PUNKTE**
+5 
+4 -> 3
+
+**1.65/3.3 PUNKTE**
 
 ## Aufgabe 4 
 
-**/3.3 PUNKTE**
+Gegeben:
+- 15,80 pro Stunde 
+- 170 Stunden gesamt 
+- 12 Stunden Samstag 
+- Samstag 30% mehr 
+- Urlaub 250 Brutto 
+
+Gesucht: 
+a) Brutto Gesamt 
+b) RV Beitrag 
+
+### a) 
+
+Brutto_Gesamt = ( (15,80 * ( 170 - 12 ) ) + ( ( 15,80 * 1.3 ) * 12 ) ) + 250 
+Brutto_Gesamt = ( ( 2496.4 ) + ( ( 20.54 ) * 12 ) + 250 
+Brutto_Gesamt = ( ( 2496.4 ) + ( 246.48 ) ) + 250 
+Brutto_Gesamt = 2,992.88 Euro 
+
+### b) 
+
+100 - 2,992.88
+1 - 29.9288
+9.3 - 278.33784 = 278.34 Euro
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 5 
+
+2 -> 3 
 
 **/3.3 PUNKTE**
 
 ## Aufgabe 6 
 
+1 -> 2
+
 **/3.3 PUNKTE**
 
 ## Aufgabe 7 
 
-**/3.3 PUNKTE**
+Wahlberechtigt:
+- 45 MA 
+- 8 Azubi >18 
+- 5 Azubi <18 
+
+- 58 Gesamt 
+
+-> 5 
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 8 
 
-**/3.3 PUNKTE**
+4
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 9 
 
-**/3.3 PUNKTE**
+1
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 10 
 
-**/3.3 PUNKTE**
+1 
+3 
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 11 
 
-**/3.3 PUNKTE**
+5 
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 12 
 
-**/3.3 PUNKTE**
+2
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 13 
 
-**/3.3 PUNKTE**
+2 
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 14 
 
-**/3.3 PUNKTE**
+### a) 
 
-## Aufgabe 15 
+3 
 
-**/3.3 PUNKTE**
+### b) 
 
-## Aufgabe 16 
+1 
 
-**/3.3 PUNKTE**
+### c) 
+
+2 
+
+**3.3/3.3 PUNKTE**
+
+15) 
+
+3 
+
+## Aufgabe 16
+
+40.000 - 100 
+1 - 0.0025 
+3140 - 7.85
 
 ## Aufgabe 17 
+
+4
 
 **/3.3 PUNKTE**
 
 ## Aufgabe 18 
 
+12
+
 **/3.3 PUNKTE**
 
 ## Aufgabe 19 
+
+2
 
 **/3.3 PUNKTE**
 
 ## Aufgabe 20 
 
+1: 60.000 Gewinn -> dieser
+2: 20.000 Gewinn 
+3: 24.000 Gewinn 
+4: 24.000 Gewinn 
+
 **/3.3 PUNKTE**
 
 ## Aufgabe 21 
+
+3
 
 **/3.3 PUNKTE**
 
 ## Aufgabe 22 
 
+5 
+
 **/3.3 PUNKTE**
 
 ## Aufgabe 23 
+
+1
 
 **/3.3 PUNKTE**
 
 ## Aufgabe 24 
 
-**/3.3 PUNKTE**
+2 
+5 
 
 ## Aufgabe 25 
+
+4
 
 **/3.3 PUNKTE**
 
 ## Aufgabe 26 
 
+c 
+e 
+f 
+b 
+d 
+a 
+g 
+
+
 **/3.3 PUNKTE**
 
 ## Aufgabe 27 
+
+31.5 oder 30.5 
 
 **/3.3 PUNKTE**
 
 ## Aufgabe 28 
 
+b 
+a 
+d 
+c
+
 **/3.3 PUNKTE**
 
 ## Aufgabe 29 
 
+1 
+6
+
 **/3.3 PUNKTE**
 
 ## Aufgabe 30 
+
+5
 
 **/3.3 PUNKTE**
 
