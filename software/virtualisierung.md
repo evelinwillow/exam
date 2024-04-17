@@ -1,4 +1,4 @@
-# 1 Virtualisierung
+# Virtualisierung
 
 ## Arten der Virtualisierung 
 
