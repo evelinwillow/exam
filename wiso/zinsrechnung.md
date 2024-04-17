@@ -5,7 +5,7 @@
 Die Tilgung bei Ratenkrediten mit fester Laufzeit lässt sich recht einfach berechnen:
 
 ```math
-Kreditsumme / Anzahl_Jahre = Tilgung_Jährlich
+Kreditsumme / Anzahl_j = Tilgung_j
 ```
 
 Um die jährliche Rate zu berechnen, kommt noch die Zinslast dazu:
@@ -17,13 +17,13 @@ Um die jährliche Rate zu berechnen, kommt noch die Zinslast dazu:
 Addiert man dies nun zur jährlichen Tilgung, ergibt sich die Annuität:
 
 ```math
-Zinsen_Jährlich + Tilgung = Annuität im ersten Jahr 
+Zinsen_j + Tilgung = Annuität
 ```
 
 Die Berechnung der Restschuld ist etwas komplexer: 
 
 ```math
-Restschuld = Tilgungsrate * ( Tilgungsdauer - Jahr des zu berechnenden Restschuld ) 
+Restschuld = Tilgungsrate * ( Tilgungsdauer - Jahr_r ) 
 ```
 
 ### Beispielrechnung
