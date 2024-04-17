@@ -128,13 +128,13 @@ GA 1
 
 - Note: 67/100 1. Durchlauf
                 
-1ba) -> ROUTING
-3aa) RAID !!! ja auch RAID 6 kommt dran !!!!
-3bb) Struktugramme...
-3c) Formel für USV
-4a) Unit conversion...
-4cb) Dif/Inc/Full backup wiederherstellung
-5d) Inhalt Certificate
+~~1ba) -> ROUTING~~
+~~3aa) RAID !!! ja auch RAID 6 kommt dran !!!!~~
+~~3bb) Struktugramme...~~
+~~3c) Formel für USV~~
+~~4a) Unit conversion...~~
+~~4cb) Dif/Inc/Full backup wiederherstellung~~
+~~5d) Inhalt Certificate~~
 
 GA 2 
 
