@@ -138,7 +138,7 @@ GA 1
 
 GA 2 
 
-1a) Lasten/Pflichtenheft
+~~1a) Lasten/Pflichtenheft~~
 1da) Zinsrechnung 
 2b) Application-Virtualisierung
 SQL 
