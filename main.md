@@ -139,7 +139,7 @@ GA 1
 GA 2 
 
 ~~1a) Lasten/Pflichtenheft~~
-1da) Zinsrechnung 
+~~1da) Zinsrechnung~~ 
 2b) Application-Virtualisierung
 SQL 
 DSGVO 
@@ -150,17 +150,6 @@ WiSo
 7) Betriebsrat Mitbestimmungsrecht 
 10) Sozialpartner
 12) Beitragsrechnung
-17) Rechtsformen
-18) Unternehmensverbindungen
-19) Gleichgewichtspreis (Angebotsüberhang, Konsumentenrente
-25) Prokura 
-
-
-## 2023 Winter FISI 
-
-3) Was darf ein Arbeitgeber anfordern
-5) Handelsregister
-6) Sicherheitsbeauftragte
 18) Mutterschutz
 20) Wirtschaftlichkeit
 26) Tarifverhandlung Ablauf
