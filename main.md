@@ -141,8 +141,8 @@ GA 2
 ~~1a) Lasten/Pflichtenheft~~
 ~~1da) Zinsrechnung~~ 
 2b) Application-Virtualisierung
-SQL 
-DSGVO 
+~~SQL~~ 
+~~DSGV~~ 
 
 WiSo
 
