@@ -16,6 +16,6 @@
 - Dadurch redundant und ausfallsicherer.
 - Server greifen auf SAN-Speicher wie normale, lokale Festplatten zu.
 - SAN kann leicht ohne Serviceausfall erweitert werden.
-
-
-
+- SAN wird oft über Fibre Channel verbunden -> Geschwindigkeiten zwischen 2-128 Gbit/s, oder alternativ iSCSI (Internet Small Computer System Interface)
+- iSCSI ist günstiger, aber dafür langsamer.
+- SANs sind redundant und skalierbar, aber dafür teuer.
