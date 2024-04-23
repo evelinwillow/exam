@@ -68,6 +68,15 @@ Zusätzlich zur Hash-Funktion wird der Peer-Hash noch mit einem asymmetrischen V
 Das Diffie-Hellman-Verfahren dient dazu, einen geheimen Schlüssel über einen unsicheren Kanal auszuhandeln. Höhere DH-Gruppen unterstützen stärkere Schlüssel.
 VPN-Peers handeln erst die zu nutzende Gruppe aus, und beginnen dann mit der Aushandlung des Schlüssels.
 
+#### Authentification Header vs. Encapsulation Security Protocol
+
+AH und ESP sind die zwei Protokolle, die für den Datenaustausch zuständig sind.
+
+AH (IP Protocol 51) gewährleistet nur Authentizität und Integrität. Hierbei werden keine Daten verschlüsselt.
+Es wird nur die Indentität der beiden Peers und die Integrität der Daten garantiert.
+
+ESP (IP Protocol 50) gewährleistet dazu noch Vertraulichkeit. Hier werden zusätzlich auch alle Daten verschlüsselt.
+
 ### openVPN
 
 ### wireguard
