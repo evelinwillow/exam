@@ -46,7 +46,7 @@ IPSec gewährleistet folgende Schutzziele:
 - Integrität durch Hash-Funktionen
 - Authentizität durch Identititätsüberprüfung 
 
-IPSec besteht aus folgenden Aufgaben:
+IPSec besteht aus folgenden Parametern:
 
 - Verschlüsselung mit DES, AES, ...
 - Prüfsummen mit MD5, SHA 
@@ -55,26 +55,28 @@ IPSec besteht aus folgenden Aufgaben:
 
 All diese Parameter müssen für eine VPN-Verbindung ausgehandelt werden (*Security Association*).
 
+#### Authentifizierung über Pre-Shared-Key
+
+ID und PSK werden mittels einer Hash-Funktion in einen Peer-Hash umgewandelt. 
+
+#### Authentifizierung über RSA 
+
+Zusätzlich zur Hash-Funktion wird der Peer-Hash noch mit einem asymmetrischen Verschlüsselungsverfahren verschlüsselt und eine *digitale Signatur* erzeugt. 
+
+#### Diffie-Hellman
+
+Das Diffie-Hellman-Verfahren dient dazu, einen geheimen Schlüssel über einen unsicheren Kanal auszuhandeln. Höhere DH-Gruppen unterstützen stärkere Schlüssel.
+VPN-Peers handeln erst die zu nutzende Gruppe aus, und beginnen dann mit der Aushandlung des Schlüssels.
+
 ### openVPN
 
 ### wireguard
 
-### SSL-VPN 
+### Weitere Protokolle 
 
-Funktionert auf Basis von HTTPS
-
-### PPTP
-
-Veraltet, sollte nicht mehr genutzt werden.
-
-### MPLS
-
-### GRE
-
-### L2F
-
-Cisco-Protokoll
-
-### L2TP 
-
-Microsoft-Protokoll
+- SSL-VPN (Funktionert auf Basis von HTTPS)
+- PPTP (Veraltet, sollte nicht mehr genutzt werden)
+- MPLS
+- GRE
+- L2F (Cisco-Protokoll)
+- L2TP (Miicrosoft-Protokoll)
