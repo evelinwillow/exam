@@ -459,122 +459,205 @@ VoIP nutzt UDP, um höhere Geschwindigkeiten zu erreichen. UDP garantiert keine 
 
 ## Aufgabe 1 
 
-**/3.3 PUNKTE**
+3
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 2 
 
-**/3.3 PUNKTE**
+1
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 3 
 
-**/3.3 PUNKTE**
+Gegeben:
+- Einlage 375,000 Euro 
+- Gewinn 28,125 Euro 
+
+Gesucht:
+- Rentabilität
+
+R = 100 / 375,000 * 28,128 
+R = 7.5%
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 4 
 
-**/3.3 PUNKTE**
+4
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 5 
 
-**/3.3 PUNKTE**
+3 -> 4
+
+**0/3.3 PUNKTE**
 
 ## Aufgabe 6 
 
-**/3.3 PUNKTE**
+2
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 7 
 
-**/3.3 PUNKTE**
+3
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 8 
 
-**/3.3 PUNKTE**
+5 -> 2
+
+**0/3.3 PUNKTE**
 
 ## Aufgabe 9 
 
-**/3.3 PUNKTE**
+5
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 10 
 
-**/3.3 PUNKTE**
+2 
+1 
+3
+2 
+3 
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 11 
 
-**/3.3 PUNKTE**
+2
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 12 
 
-**/3.3 PUNKTE**
+- 537 MA >18, davon 250 MA seit 1/2 Jahr befristet 
+- 17 >18 Azubis
+- 2 <18 Azubis
+
+11
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 13 
 
-**/3.3 PUNKTE**
+3 
+5 -> nope 
+
+**?/3.3 PUNKTE**
 
 ## Aufgabe 14 
 
-**/3.3 PUNKTE**
+1 -> 4
+
+**0/3.3 PUNKTE**
 
 ## Aufgabe 15 
 
-**/3.3 PUNKTE**
+4
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 16 
 
-**/3.3 PUNKTE**
+2
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 17 
 
-**/3.3 PUNKTE**
+5 (3??)
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 18 
 
-**/3.3 PUNKTE**
+4
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 19 
 
-**/3.3 PUNKTE**
+3
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 20 
 
-**/3.3 PUNKTE**
+2 -> 4
+
+**0/3.3 PUNKTE**
 
 ## Aufgabe 21 
 
-**/3.3 PUNKTE**
+2
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 22 
 
-**/3.3 PUNKTE**
+2 
+6
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 23 
 
-**/3.3 PUNKTE**
+2
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 24 
 
-**/3.3 PUNKTE**
+5 -> 3
+
+**0/3.3 PUNKTE**
 
 ## Aufgabe 25 
 
-**/3.3 PUNKTE**
+1
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 26 
 
-**/3.3 PUNKTE**
+6 
+3 
+4 
+2 
+1
+5 
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 27 
 
-**/3.3 PUNKTE**
+5 
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 28 
 
-**/3.3 PUNKTE**
+4
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 29 
 
-**/3.3 PUNKTE**
+5
+
+**3.3/3.3 PUNKTE**
 
 ## Aufgabe 30 
 
-**/3.3 PUNKTE**
+2
 
-**GESAMTPUNKTE:**
+**3.3/3.3 PUNKTE**
+
+**GESAMTPUNKTE: 79.2**
