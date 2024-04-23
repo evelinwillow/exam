@@ -492,6 +492,7 @@ R = 7.5%
 ## Aufgabe 5 
 
 3 -> 4
+Verschwiegenheitspflicht besteht nach Abschluss des Vertrages
 
 **0/3.3 PUNKTE**
 
@@ -510,6 +511,7 @@ R = 7.5%
 ## Aufgabe 8 
 
 5 -> 2
+Nach Bundesurlaubgesetz besteht der volle Urlaubsanspruch erst nach 6 Monaten Arbeitsverhältnis
 
 **0/3.3 PUNKTE**
 
@@ -550,11 +552,15 @@ R = 7.5%
 3 
 5 -> nope 
 
+Hätte ich vllt richtig gemacht? Betriebsrat hat Mitbestimmungsrecht bzgl. Betriebsferien, nicht der Einstellung von leitenden Mitarbeitern
+
 **?/3.3 PUNKTE**
 
 ## Aufgabe 14 
 
 1 -> 4
+
+Die Jugend- und Auszubildendenvertretung kann nur in einem Betrieb mit Betriebsrat gewählt werden.
 
 **0/3.3 PUNKTE**
 
@@ -592,6 +598,8 @@ R = 7.5%
 
 2 -> 4
 
+Kinderlose Arbeitnehmer über 23 zahlen einen höheren Beitrag zur Pflegeversicherung.
+
 **0/3.3 PUNKTE**
 
 ## Aufgabe 21 
@@ -616,6 +624,8 @@ R = 7.5%
 ## Aufgabe 24 
 
 5 -> 3
+
+Gewerbesteuer zahlende Ist-Kaufmänner sind von der Einkommenssteuer befreit.
 
 **0/3.3 PUNKTE**
 
