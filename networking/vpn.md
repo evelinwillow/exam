@@ -27,6 +27,26 @@ Verbindet zwei Hosts und verschlüsselt die gesamte Kommunikation zwischen ihnen
 |--------------------------------------------------------------| 
 ```
 
+## VPN-Protokolle
 
+### IPSec
 
+### openVPN
 
+### wireguard
+
+### SSL-VPN 
+
+Funktionert auf Basis von HTTPS
+
+### PPTP
+
+Veraltet, sollte nicht mehr genutzt werden.
+
+### L2F
+
+Cisco-Protokoll
+
+### L2TP 
+
+Microsoft-Protokoll
