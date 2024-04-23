@@ -230,25 +230,230 @@ Vererbung bedeutet, dass Klassen, die von anderen Erben, dessen Methoden und Dat
 
 ## Aufgabe 1 
 
-**/25 PUNKTE**
+## a)
+
+### aa)
+
+/30 - 4 
+/29 - 8
+
+8 12 24 32 40 48 56 64 72 80 ....
+
+NA: 203.0.113.64
+FH: 203.0.113.65 -> ...-ext
+LH: 203.0.113.70 -> ...-int
+BC: 203.0.113.71
+
+**2/2 PUNKTE**
+
+### ab) 
+
+/30 -> 2 Bit Hostanteil -> 252
+/29 -> 3 Bit Hostanteil -> 248
+/8  -> 24 Bit Hostanteil
+
+```table 
+NID             Subnet          Schnittstelle/Next Hop
+
+198.51.100.2    255.255.255.252 LWL
+203.0.113.64    255.255.255.248 ETH 
+10.0.0.0        255.0.0.0       203.0.113.70
+172.16.0.0      255.255.0.0     192.0.2.121
+0.0.0.0         ----            LWL
+```
+
+**6/8 PUNKTE**
+
+### b)
+
+SPI betrachtet auch höhere Ebenen des OSI-Modells und unterstützt z.B. auch NAT und weitere Funktionen.
+Aufgebaute Verbindungen (States) werden getrackt und protokolliert, können eigene, spezielle Regeln erhalten
+
+**4/4 PUNKTE** -> aber nur Glück! Lernen! 
+
+### c) 
+
+```table 
+Aktion  Protokoll   Quelle      Ziel            Quellport   Zielport    Von Interface   Nach Interface
+PASS    TCP         *           203.0.113.67    *           80          LWL             ETH 
+PASS    TCP         *           203.0.113.67    *           443         LWL             ETH
+PASS    TCP         *           203.0.113.68    *           25          LWL             ETH  
+PASS    TCP         *           203.0.113.68    *           113         LWL             ETH
+DROP    *           *           *               *           *           LWL             ETH
+PASS    *           *           *               *           *           ETH             LWL
+```
+
+**8/10 PUNKTE**
+
+**20/24 PUNKTE**
 
 ## Aufgabe 2 
 
-**/25 PUNKTE**
+### a)
+
+DNS löst Domain Names in Adressen auf 
+
+**3/3 PUNKTE**
+
+### b) 
+
+142.250.184.227
+
+**4/4 PUNKTE**
+
+### c)
+
+10.0.0.101
+2001:...
+
+**4/4 PUNKTE**
+
+### d) 
+
+fd00:...
+
+**3/3 PUNKTE**
+
+### e) 
+
+4001 kam zuerst zurück, und der Ping startete, bevor 4016 überhaupt ankam.
+
+**3/3 PUNKTE**
+
+### f) 
+
+5 Hops ( ( 128 - 118 ) / 2 )
+
+**0/3 PUNKTE** -> fast richtig!
+
+### g) 
+
+Load Balancing
+
+**3/3 PUNKTE**
+
+**20/23 PUNKTE**
 
 ## Aufgabe 3 
 
-**/25 PUNKTE**
+### a) 
+
+TLS ist auf Transportebene verschlüsselt. Daten können nicht mitgelesen werden, ferner kann durch Digest überprüft werden, ob Daten abgeändert wurden.
+
+**4/4 PUNKTE**
+
+### b) 
+
+1.2 erlaubt unsichere Verschlüsselung 
+Handshakes sind vor ServerHello nicht verschlüsselt -> MITM-Anfällig
+Session Hijacking möglich
+
+**9/9 PUNKTE**
+
+### c) 
+
+Interne CA können zentral vom Unternehmen verwaltet werden, und Ausstellung sowie Sperrung von Zertifikaten erfolgt einfacher, einfachere Integration in z.B. RADIUS
+Externe CA oft kostspielig; intern keine Lizenz nötig.
+
+**6/6 PUNKTE**
+
+### d)
+
+Einfach für MA 
+Kann komplett ohne extraaufwand für MA eingerichtet werden 
+Physisches Gerät ist sicherste Lösung (2FA, aber ein Faktor physisch) 
+2FA ohne extrakosten 
+
+**8/8 PUNKTE**
+
+**27/27 PUNKTE**
 
 ## Aufgabe 4 
 
-**/25 PUNKTE**
+### a)
 
-## Aufgabe 5 
+Gegeben: 
+- 5 interne Gespräche 
+- 15 externe Gespräche 
+- Overhead 10% 
+- 64kBit/s 
 
-**/25 PUNKTE**
+5 Intern -> 10 Verbindungen 
+15 Extern -> 15 Verbindungen -> 25 gesamt 
 
-**GESAMTPUNKTE:**
+Gesucht: 
+
+- Bandbreite
+
+Bandbreite = 25 * 64kBit/s * 1.1 
+Bandbreite = 1600 kBit/s * 1.1 
+Bandbreite = 1760 kBit/s 
+
+**5/5 PUNKTE**
+
+### b) 
+
+#### ba) 
+
+Audio wird prioritisert
+
+**3/3 PUNKTE**
+
+#### bb) 
+
+Video Layout 
+Videoauflösung 
+Framerate 
+
+**3/3 PUNKTE**
+
+### c) 
+
+2.500/4.000 
+
+10 * 2 = 20 Verbindungen 
+
+50.000 / 80.000
+
+**0/2 PUNKTE**
+
+### d) 
+
+Gegeben: 
+
+- 34 MiB/m 
+- 5 m 
+- 16 Mbit/s 
+
+Gesucht: 
+
+- Dauer 
+
+Daten = ( 5 m * 34 MiB/m )  
+Daten = 170 MiB 
+Daten = 178,257,920 B = 1,426,063,360 b 
+Daten = 1,426 Mbit 
+
+Dauer = 1,426 Mbit / 34 Mbit/s 
+Dauer = 42 s
+
+**2/4 PUNKTE**
+
+### e)
+
+QoS prioritisiert gewissen Traffic, basierend auf Protokoll/Art. Dadurch soll Traffic, der in Echtzeit stattfinden soll, wesentlich flüssiger und schneller übertragen werden. Nutzer sollen somit möglichst latenzfrei mit maximaler Qualität kommunizieren können.
+
+**4/4 PUNKTE**
+
+### f) 
+
+VoIP nutzt UDP, um höhere Geschwindigkeiten zu erreichen. UDP garantiert keine korrekte Datenübertragung.
+
+**5/5 PUNKTE**
+
+**21/26 PUNKTE**
+
+**GESAMTPUNKTE: 88**
 
 # WiSO 
 

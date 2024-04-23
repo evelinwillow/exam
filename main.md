@@ -155,3 +155,9 @@ WiSo
 26) Tarifverhandlung Ablauf
 27) Kündigungsfrist 
 
+## 2022
+
+SQL Data Types
+Arten von Datenbanken
+CREATE TABLE
+
